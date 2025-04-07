@@ -155,4 +155,64 @@ body {
     max-height: 300px; /* Set a maximum height for the result area */
     overflow-y: auto; /* Enable vertical scrolling if content exceeds max height */
   }
+@media (max-width: 600px) {
+    .header {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 10px;
+    }
+
+    .header img {
+        width: 40px;
+        height: 40px;
+    display: none;
+    }
+
+    .header h2 {
+        font-size: 1.5em;
+        margin-left: 0;
+        text-align: center;
+    }
+
+    body {
+        height: auto;
+        padding: 20px;
+        overflow: auto;
+    }
+
+    .cyrcle {
+        width: 50px;
+        height: 50px;
+        margin: 20px auto;
+    }
+
+    .container {
+        padding: 10px;
+        width: 100%;
+    }
+
+    .container h1 {
+        font-size: 2em;
+    }
+
+    .search-box input[type="text"] {
+        width: 100%;
+        font-size: 0.9em;
+    }
+
+    .search-box button {
+        padding: 10px 20px;
+        font-size: 0.9em;
+    }
+
+    .suggested-questions button {
+        font-size: 0.9em;
+        padding: 8px 10px;
+    }
+
+    .result {
+        font-size: 1em;
+        padding: 15px;
+    }
+}
          
