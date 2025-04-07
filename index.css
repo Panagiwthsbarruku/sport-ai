@@ -120,30 +120,39 @@ body {
   transform: scale(1.05); /* Subtle hover effect */
 }
 
-.questions-container {
-  display: flex;
-  overflow-x: auto;
-  margin-top: 20px;
-  gap: 10px;
-  margin-bottom: 20px;
+ .suggested-questions button {
+    margin: 5px;
+    padding: 10px 12px;
+    background-color: #2b2b2c7f;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.2s, transform 0.1s;
+    font-size: 1em;
+    font-family: 'Arial', sans-serif;
+    box-shadow: 0 4px 7px rgba(0, 0, 0, 0.1); /* Added shadow for depth */
+    animation: flash 1.5s linear infinite;
 }
-
-.question-card {
-  background-color: #333;
-  color: white;
-  padding: 20px 20px;
-  border-radius: 5px;
-  cursor: pointer;
-  white-space: nowrap;
-  transition: transform 0.2s ease;
-  text-overflow: ellipsis;
-  max-width: 300px; /* Adjusted width for better alignment */
+.suggested-questions button:hover {
+    background-color: #004a990c;
+} 
+@keyframes flash {
+    0% { background-color: #3c3c3e7f; }
+    50% { background-color: #004a990c; }
+    100% { background-color: #2b2b2c7f; }
 }
-
-.question-card:hover {
-  transform: scale(1.1);
-}
-
-.hidden {
-  display: none;
-}
+  
+  /* Αποτέλεσμα */
+  .result {
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #1f1f1f;
+    border-radius: 8px;
+    box-shadow: 0 4px 7px rgba(0, 0, 0, 0.1);
+    font-size: 1.2em;
+    line-height: 1.5em;
+    max-height: 300px; /* Set a maximum height for the result area */
+    overflow-y: auto; /* Enable vertical scrolling if content exceeds max height */
+  }
+         
